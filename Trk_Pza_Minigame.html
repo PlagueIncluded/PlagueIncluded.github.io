@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<script type="text/javascript">
+var cookiecount  = 0;
+</script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Turksepizza.css">
+    <title>Pizza Clicker</title>
+  
+</head>
+<body>
+    <div id="h1"> <a href="index.html"> De Turkse Pizza </a> |
+        <a href="Trk_Pza_Vrsch.html">Soorten Pizza's</a> | 
+        <a href="Trk_Pza_Minigame.html">Spelletje</a> | 
+        <a href="Trk_Pza_Ges.html">Geschiedenis</a> | 
+        <a href="Trk_Pza_Bronnenlijst.html">Bronnenlijst</a>
+      </div>
+      <a></a>
+      <a><img src="TurksePizzaCookieClicker.png" alt=""></a><p id="pizza-text">Turkse Pizza's: 0</p>
+
+      <input type="button" value="Pizza clicker" onclick="pizza()">
+
+      <script>
+        var TurksePizza=0;
+
+        function pizza() {
+            TurksePizza += 1;
+            document.getElementById("pizza-text").innerHTML = "Turkse Pizza's: " + TurksePizza;
+            document.title= "Pizza:" + TurksePizza
+        }
+      </script>
+</body>
+</html>
